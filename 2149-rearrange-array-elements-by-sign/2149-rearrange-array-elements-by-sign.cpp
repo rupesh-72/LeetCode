@@ -20,6 +20,3 @@ public:
         return ans;
     }
 };
-
-// can be optimized by using only O(1) space using two pointer approach
-// positive index start with 0 and negative with 1 and insert positive element at positive index and increase it by 2 similarly with the negative element
