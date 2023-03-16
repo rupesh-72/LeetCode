@@ -1,7 +1,6 @@
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
-        int mini = *min_element(nums.begin(), nums.end());
         vector<int> res;
         unordered_set<int> s;
         for(int i = 0; i < nums.size(); i++)
