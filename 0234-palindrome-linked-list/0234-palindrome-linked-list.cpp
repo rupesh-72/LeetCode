@@ -18,13 +18,10 @@ public:
             head = head->next;
         }
         
-        int n = str.size() - 1;
-        for(int i = 0; i < str.size()/2; i++)
-        {
-            if(str[i] != str[n])
-                return false;
-            n--;
-        }
-        return true;
+        string reverseStr = str;
+        reverse(reverseStr.begin(), reverseStr.end());
+        if(str == reverseStr)
+            return true;
+        return false;
     }
 };
